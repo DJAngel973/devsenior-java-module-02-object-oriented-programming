@@ -24,14 +24,61 @@ public class Book {
     * Used  for create and initialize the object of the class
     * it ensures that a valid and usable object is created
     */
-    
+
     // Primary Constructor
     // it ensures that object have all attributes
     public Book(String title, String author, String editorial, Double price){
         this.title = title;
         this.author = author;
         this.editorial = editorial;
-        this.price =price;
+        this.price = price;
+    }
+
+    // Constructors chain
+
+    // Second Constructor
+    // Using two attributes
+    public Book(String title, String author){
+        this(title, author, "Editorial",0.0);
+    }
+
+    // Third Constructor
+    // Using three attributes
+    public Book(String title, String author, String editorial){
+        this(title, author, editorial,0.0);
+    }
+
+    // Fourth Constructor
+    // one attribute
+    public Book(String title){
+        this(title, "Nombre","Editorial");
+    }
+
+    // Default Constructor
+    // Initialize attributes with its default value
+    public Book(){
+        this("Titulo");
+    }
+
+    // Getters
+    // To call the attribute
+    public String getTitle(){
+        return title;
+    }
+    public String getAuthor(){
+        return author;
+    }
+    public String getEditorial(){
+        return editorial;
+    }
+    public Double getPrice(){
+        return price;
+    }
+
+    // Setters
+    // To be able to change the attribute
+    public Double setPrice(){
+        return price;
     }
 
 }
