@@ -17,4 +17,21 @@ public class Book {
     private String author;
     private String editorial;
     private Double price;
+
+    /*
+    * Constructor
+    * Is a type special ot method
+    * Used  for create and initialize the object of the class
+    * it ensures that a valid and usable object is created
+    */
+    
+    // Primary Constructor
+    // it ensures that object have all attributes
+    public Book(String title, String author, String editorial, Double price){
+        this.title = title;
+        this.author = author;
+        this.editorial = editorial;
+        this.price =price;
+    }
+
 }
