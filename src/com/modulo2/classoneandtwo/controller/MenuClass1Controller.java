@@ -22,9 +22,12 @@ public class MenuClass1Controller {
         boolean exit = false;
         int option;
 
+        // Show message first class
+        menuClass1UI.firstClass();
+
         // Loop for menu
         while(!exit){
-            menuClass1UI.firstClass(); // Called at method for show primary menu
+            menuClass1UI.menuClass1(); // Called at method for show primary menu
             option = inputUserUI.optionUser(); // Called at method for take option user
 
             switch (option) {
