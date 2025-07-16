@@ -9,13 +9,9 @@ public class Main {
         // Create object for initialize
         AppController appController = new AppController();
 
-        // Create object for close Scanner
-        InputUserUI readUser = new InputUserUI();
-
         // Start
         appController.start();
-
         // Close Scanner
-        readUser.close();
+        appController.close();
     }
 }
