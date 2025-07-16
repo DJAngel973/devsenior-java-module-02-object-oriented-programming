@@ -32,7 +32,6 @@ public class Book {
         this.author = author;
         this.editorial = editorial;
         this.price = price;
-        this.setPrice(price);
     }
 
     // Constructors chain
@@ -74,20 +73,5 @@ public class Book {
     }
     public Double getPrice(){
         return price;
-    }
-
-    // Setters
-    // To be able to change the attribute
-    public Double setPrice(){
-        return price;
-    }
-
-    // Method for validate price
-    public void setPrice(Double price) {
-        if (price > 0) {
-            this.price = price;
-        } else {
-            System.out.println("El precio debe ser mayor a 0.");
-        }
     }
 }
