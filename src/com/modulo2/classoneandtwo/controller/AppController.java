@@ -21,4 +21,8 @@ public class AppController {
     public void start(){
         menuController.star();
     }
+
+    public void close(){
+        inputUserUI.close();
+    }
 }
