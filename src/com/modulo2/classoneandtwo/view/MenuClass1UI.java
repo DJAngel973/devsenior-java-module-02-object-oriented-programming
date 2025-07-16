@@ -9,6 +9,13 @@ public class MenuClass1UI {
                 la cual definimos los atributos, el constructor para el encapsulamiento
                 mas los métodos necesarios, con ello desde el main o una clase que genere la lógica
                 cree el objeto y se puede interactuar con el.
+                """);
+    }
+
+    // Method Options menu
+    public void menuClass1(){
+        System.out.println("""
+                opciones a interactuar:
                 1. Ejemplo Book
                 2. Primer ejercicio
                 3. Volver menu principal
