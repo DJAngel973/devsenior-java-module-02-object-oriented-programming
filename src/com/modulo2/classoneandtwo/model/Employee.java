@@ -9,8 +9,6 @@ public class Employee {
     private String department;
 
     // Constructor
-    public Employee(){
-    }
     public Employee(String fullName, String idEmployee, Double monthlySalary, String department){
         this.fullName = fullName;
         this.idEmployee = idEmployee;
@@ -19,6 +17,9 @@ public class Employee {
     }
     public Employee(String fullName, String idEmployee, String department){
         this(fullName, idEmployee, 0.0, department);
+    }
+    public Employee(String fullName, String idEmployee){
+        this(fullName, idEmployee, 0.0, "");
     }
 
     // Getters
