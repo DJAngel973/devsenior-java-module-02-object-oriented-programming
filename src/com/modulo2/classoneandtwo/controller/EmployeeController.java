@@ -1,13 +1,16 @@
 package com.modulo2.classoneandtwo.controller;
 
+import com.modulo2.classoneandtwo.model.Employee;
 import com.modulo2.classoneandtwo.model.EmployeeService;
 import com.modulo2.classoneandtwo.view.EmployeeUI;
+import com.modulo2.classoneandtwo.view.InputUserUI;
 
 public class EmployeeController {
 
     // Instantiate objects
     private final EmployeeUI employeeUI = new EmployeeUI();
     private final EmployeeService employeeService = new EmployeeService();
+    private final InputUserUI inputUserUI = new InputUserUI();
 
     // Messages
     public void showMessage(){
@@ -19,6 +22,18 @@ public class EmployeeController {
     public void showEmployee(){
         employeeUI.information(employeeService.getEmployee1());
         employeeUI.information(employeeService.getEmployee2());
+        employeeUI.information(employeeService.getEmployee3());
+    }
+
+    // Modify salary employee
+    public void modifySalary(){
+
+        // show message and input data
+        employeeUI.requestSalary(employeeService.getEmployee3());
+        Double newSalary = inputUserUI.salary();
+
+        // Modify salary of employee
+        employeeService.updateSalary(employeeService.getEmployee3(), newSalary);
         employeeUI.information(employeeService.getEmployee3());
     }
 }

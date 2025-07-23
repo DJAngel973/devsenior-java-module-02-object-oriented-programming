@@ -1,5 +1,7 @@
 package com.modulo2.classoneandtwo.model;
 
+import com.modulo2.classoneandtwo.view.EmployeeUI;
+
 public class EmployeeService {
 
     // Instantiate Employee objects
@@ -22,5 +24,10 @@ public class EmployeeService {
     public Double annualSalary(Employee employee){
         // We multiply by 12 to know the annual salary
         return employee.getMonthlySalary() *12;
+    }
+
+    // Modify salary employee
+    public void updateSalary(Employee employee, Double newSalary){
+        employee.setMonthlySalary(newSalary); // Update new salary
     }
 }

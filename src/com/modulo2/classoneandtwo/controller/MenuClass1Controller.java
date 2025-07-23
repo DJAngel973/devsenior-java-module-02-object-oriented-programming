@@ -1,5 +1,6 @@
 package com.modulo2.classoneandtwo.controller;
 
+import com.modulo2.classoneandtwo.model.Employee;
 import com.modulo2.classoneandtwo.view.InputUserUI;
 import com.modulo2.classoneandtwo.view.MenuClass1UI;
 
@@ -37,6 +38,12 @@ public class MenuClass1Controller {
                     bookController.showBook();
                 }
                 case 2 -> {
+                    EmployeeController employeeController = new EmployeeController();
+                    employeeController.showMessage();
+                    employeeController.showEmployee();
+                    employeeController.modifySalary();
+                }
+                case 3 -> {
                     System.out.println("Gracias.");
                     exit = true;
                 }

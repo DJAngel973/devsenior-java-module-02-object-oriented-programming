@@ -17,7 +17,7 @@ public class EmployeeUI {
                 Id Empleado: %s
                 Salario mensual: %.2f
                 Departamento: %s
-                """, employee.getFullName(), employee.getIdEmployee(), employee.getMonthlySalary(), employee.getDepartment());
+                \n""", employee.getFullName(), employee.getIdEmployee(), employee.getMonthlySalary(), employee.getDepartment());
     }
 
     // Method example explanation Book
@@ -28,5 +28,10 @@ public class EmployeeUI {
                 nos permiten acceder a los atributos de manera controlada, dando un inicio a la encapsulación
                 y a la programación orientada a objetos.
                 """);
+    }
+
+    // Request salary
+    public void requestSalary(Employee employee){
+        System.out.printf("Ingresa el nuevo salario para %s : ", employee.getFullName());
     }
 }

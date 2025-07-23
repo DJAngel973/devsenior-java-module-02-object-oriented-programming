@@ -16,4 +16,9 @@ public class InputUserUI {
     public void close(){
         input.close();
     }
+
+    // Take salary employee
+    public Double salary(){
+        return input.nextDouble();
+    }
 }
