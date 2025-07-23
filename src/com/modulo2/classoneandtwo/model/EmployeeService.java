@@ -21,9 +21,11 @@ public class EmployeeService {
     }
 
     // Calculate the annual salary by multiplying monthly salary by 12
-    public Double annualSalary(Employee employee){
+    public String annualSalary(Employee employee){
+
+        Double fullSalary = employee.getMonthlySalary() *12;
         // We multiply by 12 to know the annual salary
-        return employee.getMonthlySalary() *12;
+        return String.format("Salario anual de %s es $%.2f\n",employee.getFullName(),fullSalary);
     }
 
     // Modify salary employee

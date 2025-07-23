@@ -29,11 +29,15 @@ public class EmployeeController {
     public void modifySalary(){
 
         // show message and input data
-        employeeUI.requestSalary(employeeService.getEmployee3());
+        employeeUI.requestSalary(employeeService.getEmployee2());
         Double newSalary = inputUserUI.salary();
 
         // Modify salary of employee
-        employeeService.updateSalary(employeeService.getEmployee3(), newSalary);
-        employeeUI.information(employeeService.getEmployee3());
+        employeeService.updateSalary(employeeService.getEmployee2(), newSalary);
+        employeeUI.information(employeeService.getEmployee2());
+
+        // show annual Salary
+        String fullSalary = employeeService.annualSalary(employeeService.getEmployee2());
+        employeeUI.showFullSalary(fullSalary);
     }
 }

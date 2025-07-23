@@ -34,4 +34,9 @@ public class EmployeeUI {
     public void requestSalary(Employee employee){
         System.out.printf("Ingresa el nuevo salario para %s : ", employee.getFullName());
     }
+
+    // show annual salary
+    public void showFullSalary(String message){
+        System.out.println(message);
+    }
 }
