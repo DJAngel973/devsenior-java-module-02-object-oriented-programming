@@ -9,6 +9,7 @@ public class Class2UI {
                 1. Explicación
                 2. Ejercicio Modelando una flota de vehículos
                 3. Volver menu principal
+                Escoge una opción valida:
                 """);
     }
 

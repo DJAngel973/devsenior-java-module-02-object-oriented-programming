@@ -31,6 +31,10 @@ public class MenuController {
             switch (option) {
                 case 1 -> firstClass();
                 case 2 -> {
+                    MenuClass2Controller menuClass2Controller = new MenuClass2Controller();
+                    menuClass2Controller.menuClass2();
+                }
+                case 3 -> {
                     System.out.println("Gracias por participar.");
                     exit = true;
                 }
