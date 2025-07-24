@@ -32,17 +32,8 @@ public class MenuClass1Controller {
             option = inputUserUI.optionUser(); // Called at method for take option user
 
             switch (option) {
-                case 1 -> {
-                    BookController bookController = new BookController();
-                    bookController.showMessage();
-                    bookController.showBook();
-                }
-                case 2 -> {
-                    EmployeeController employeeController = new EmployeeController();
-                    employeeController.showMessage();
-                    employeeController.showEmployee();
-                    employeeController.modifySalary();
-                }
+                case 1 -> exampleBook();
+                case 2 -> firstExercise();
                 case 3 -> {
                     System.out.println("Gracias.");
                     exit = true;
@@ -50,5 +41,18 @@ public class MenuClass1Controller {
                 default -> System.out.println("Ingresa una opción valida.");
             }
         }
+    }
+    // Method example book
+    public void exampleBook(){
+        BookController bookController = new BookController();
+        bookController.showMessage();
+        bookController.showBook();
+    }
+    // Method first exercise
+    public void firstExercise(){
+        EmployeeController employeeController = new EmployeeController();
+        employeeController.showMessage();
+        employeeController.showEmployee();
+        employeeController.modifySalary();
     }
 }

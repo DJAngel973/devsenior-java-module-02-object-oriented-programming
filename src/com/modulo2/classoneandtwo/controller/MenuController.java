@@ -30,10 +30,7 @@ public class MenuController {
 
             switch (option) {
                 case 1 -> firstClass();
-                case 2 -> {
-                    MenuClass2Controller menuClass2Controller = new MenuClass2Controller();
-                    menuClass2Controller.menuClass2();
-                }
+                case 2 -> secondClass();
                 case 3 -> {
                     System.out.println("Gracias por participar.");
                     exit = true;
@@ -46,5 +43,10 @@ public class MenuController {
     public void firstClass(){
         MenuClass1Controller menuClass1Controller = new MenuClass1Controller();
         menuClass1Controller.menuClass1();
+    }
+    // Method that calls submenu class2
+    public void secondClass(){
+        MenuClass2Controller menuClass2Controller = new MenuClass2Controller();
+        menuClass2Controller.menuClass2();
     }
 }

@@ -29,9 +29,7 @@ public class MenuClass2Controller {
             option = inputUserUI.optionUser();
 
             switch (option){
-                case 1 -> {
-                    class2UI.explication(); // Called method message explication
-                }
+                case 1 -> explication();
                 case 2 -> {}
                 case 3 -> {
                     System.out.println("Gracias.");
@@ -39,5 +37,9 @@ public class MenuClass2Controller {
                 default -> System.out.println("Ingresa una opción valida.");
             }
         }
+    }
+    // Method show explication
+    public void explication(){
+        class2UI.explication(); // Called method message explication
     }
 }
