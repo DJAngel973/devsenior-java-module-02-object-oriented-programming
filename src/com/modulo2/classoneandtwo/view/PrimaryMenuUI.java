@@ -8,8 +8,9 @@ public class PrimaryMenuUI {
                 🤘🇨🇴🤘🇨🇴🤘    Bienvenidos al modulo 2 DevSenior    🤘🇨🇴🤘🇨🇴🤘
                 Podrás escoger alguna opción para interactuar
                 con ejercicios y los pequeños proyectos realizados.
-                1. Clase 1 y Clase 2: Clases, Objetos, Constructores y Encapsulamiento con Tutoría
-                2. Terminar
+                1. Clase 1: Clases, Objetos, Constructores y Encapsulamiento.
+                2. Clase 2: Herencia, polimorfismo, clases abstractas e Interfaces.
+                3. Terminar
                 
                 Escoge una opción:
                 """);
