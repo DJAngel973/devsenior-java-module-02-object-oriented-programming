@@ -1,6 +1,9 @@
 package com.modulo2.classoneandtwo.model;
 
-public class Car extends Vehicle {
+import com.modulo2.classoneandtwo.interfaz.IBootable;
+
+// Implement at interface IBootable
+public class Car extends Vehicle implements IBootable {
 
     // Attributes
     private Integer doorsNumber;
@@ -28,6 +31,12 @@ public class Car extends Vehicle {
     }
     // Method move
     public String vehicleMove(){
-        return String.format("El vehiculo de marca %s se esta moviendo por la via al llano.", getBrand());
+        return String.format("El carro de marca %s se esta moviendo por la via al llano.", getBrand());
+    }
+
+    // Concrete implementation of the method
+    @Override
+    public void startUp() {
+        System.out.println("El carro necesita las llaves y estar con combustible para poder encender");
     }
 }
