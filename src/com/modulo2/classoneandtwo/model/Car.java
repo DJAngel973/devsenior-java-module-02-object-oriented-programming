@@ -30,6 +30,7 @@ public class Car extends Vehicle implements IBootable {
                 """, getBrand(), getModel(), getYear(), getDoorsNumber());
     }
     // Method move
+    @Override
     public String vehicleMove(){
         return String.format("El carro de marca %s se esta moviendo por la via al llano.", getBrand());
     }
