@@ -26,8 +26,7 @@ public class Car extends Vehicle implements IBootable {
                 Marca: %s
                 Modelo: %s
                 Año: %d
-                Número de puertas: %s
-                """, getBrand(), getModel(), getYear(), getDoorsNumber());
+                Número de puertas: %s""", getBrand(), getModel(), getYear(), getDoorsNumber());
     }
     // Method move
     @Override
@@ -38,6 +37,6 @@ public class Car extends Vehicle implements IBootable {
     // Concrete implementation of the method
     @Override
     public void startUp() {
-        System.out.println("El carro necesita las llaves y estar con combustible para poder encender");
+        System.out.println("El carro necesita las llaves y estar con combustible para poder encender.\n");
     }
 }
