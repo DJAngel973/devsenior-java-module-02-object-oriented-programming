@@ -26,17 +26,16 @@ public class Motorcycle extends Vehicle implements IBootable {
                 Marca: %s
                 Modelo: %s
                 Año: %d
-                Cilindrada: %d
-                """, getBrand(), getModel(), getYear(), getCylinder());
+                Cilindrada: %d""", getBrand(), getModel(), getYear(), getCylinder());
     }
     @Override
     public String vehicleMove(){
-        return String.format("La motocicleta %s esta acelerando", getBrand());
+        return String.format("La motocicleta %s esta acelerando.", getBrand());
     }
 
     // Concrete implementation of the method
     @Override
     public void startUp() {
-        System.out.println("La motocicleta requiere las llaves y tener combustible para poder encender");
+        System.out.println("La motocicleta requiere las llaves y tener combustible para poder encender.\n");
     }
 }

@@ -3,6 +3,8 @@ package com.modulo2.classoneandtwo.controller;
 import com.modulo2.classoneandtwo.view.Class2UI;
 import com.modulo2.classoneandtwo.view.InputUserUI;
 
+import java.beans.FeatureDescriptor;
+
 public class MenuClass2Controller {
 
     // Attributes
@@ -30,7 +32,7 @@ public class MenuClass2Controller {
 
             switch (option){
                 case 1 -> explication();
-                case 2 -> {}
+                case 2 -> vehicleFleet();
                 case 3 -> {
                     System.out.println("Gracias.");
                     exit = true;}
@@ -41,5 +43,11 @@ public class MenuClass2Controller {
     // Method show explication
     public void explication(){
         class2UI.explication(); // Called method message explication
+    }
+    // Method show exercise vehicle fleet
+    public void vehicleFleet(){
+        FleetVehicleController fleetVehicleController = new FleetVehicleController();
+        fleetVehicleController.message();
+        fleetVehicleController.showVehicle();
     }
 }

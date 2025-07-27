@@ -23,11 +23,10 @@ public class Truck extends Vehicle{
                 Marca: %s
                 Modelo: %s
                 Año: %d
-                Capacidad de carga: %d kilos
-                """, getBrand(), getModel(), getYear(), getLoadCapacity());
+                Capacidad de carga: %d kilos""", getBrand(), getModel(), getYear(), getLoadCapacity());
     }
     @Override
     public String vehicleMove(){
-        return String.format("La camión lleva %d kilos y esta avanzando lentamente", getLoadCapacity());
+        return String.format("La camión lleva %d kilos y esta avanzando lentamente.\n", getLoadCapacity());
     }
 }
