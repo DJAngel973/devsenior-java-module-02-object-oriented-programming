@@ -10,7 +10,8 @@ public class PrimaryMenuUI {
                 con ejercicios y los pequeños proyectos realizados.
                 1. Clase 1: Clases, Objetos, Constructores y Encapsulamiento.
                 2. Clase 2: Herencia, polimorfismo, clases abstractas e Interfaces.
-                3. Terminar
+                3. Clase 3: Modelado Avanzado de Clases POO.
+                4. Terminar
                 
                 Escoge una opción:
                 """);
