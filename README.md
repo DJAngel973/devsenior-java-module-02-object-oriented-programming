@@ -96,7 +96,7 @@ You can compile and run each `.java` file individually using the terminal or you
 1. Navigate to the folder containing the `.java` file:
 
     ```bash
-   cd src/com.modulo2.classoneandtwo
+   cd src/com.modulo2.master
 
 2. Compile the file:
 
