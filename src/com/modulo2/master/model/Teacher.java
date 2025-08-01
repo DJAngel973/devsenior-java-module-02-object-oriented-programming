@@ -18,13 +18,13 @@ public class Teacher {
 
     // Getters
     public String getName(){
-        return name;
+        return this.name;
     }
     public String getIdTeacher(){
-        return idTeacher;
+        return this.idTeacher;
     }
     public Department getDepartment(){
-        return department;
+        return this.department;
     }
 
     // Method abstract

@@ -14,11 +14,9 @@ public class Student {
     public Student(){}
 
     // Getters
-    public String getName(){
-        return name;
-    }
+    public String getName(){ return this.name; }
     public String getIdStudent(){
-        return idStudent;
+        return this.idStudent;
     }
 
     // Method abstract
