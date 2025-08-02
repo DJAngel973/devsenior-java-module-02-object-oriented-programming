@@ -19,6 +19,8 @@ public class Student {
         return this.idStudent;
     }
 
-    // Method abstract
-    //public abstract String displayInfo();
+    // Method string
+    public String displayInfo(){
+        return String.format("Id estudiante: %s.\nNombre: %s.", this.idStudent, this.name) ;
+    }
 }
