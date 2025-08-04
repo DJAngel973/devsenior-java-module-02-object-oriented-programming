@@ -9,4 +9,12 @@ public class DepartmentService {
     // Getters
     public Department getComputingDept(){return computingDept;}
     public Department getDeveloperDept(){return developerDept;}
+
+    // Methods
+    public boolean addTeacherDep(Teacher teacher, Department department){
+        return department.addTeacher(teacher);
+    }
+    public Teacher[] reDisplayTeacherDep(Department department){
+        return department.reDisplayTeacher() ;
+    }
 }
