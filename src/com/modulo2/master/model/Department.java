@@ -11,9 +11,6 @@ public class Department {
     public Department(String name, Integer maxTeachers){
         this.name = name;
         this.teachers = new Teacher[maxTeachers];
-        System.out.printf("Departamento %s creado con capacidad para %d profesores.",
-                this.name,
-                maxTeachers);
     }
 
     // Getters
@@ -55,11 +52,11 @@ public class Department {
         if (this.teacherCount == 0){
             System.out.println(" No hay profesores.");
         }else { // Look through the array to display  each non-null teacher.
-            for (int newTeac = 0; newTeac < teachers.length; newTeac++) {
-                if (this.teachers[newTeac] != null) {
+            for (int i = 0; i < teachers.length; i++) {
+                if (this.teachers[i] != null) {
                     System.out.printf("* %s\n* %s\n",
-                            this.teachers[newTeac].getName(),
-                            this.teachers[newTeac].getIdTeacher());
+                            this.teachers[i].getName(),
+                            this.teachers[i].getIdTeacher());
                 }
             }
         }

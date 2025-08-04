@@ -1,10 +1,9 @@
 package com.modulo2.master.controller;
 
-import com.modulo2.master.model.CourseService;
-import com.modulo2.master.model.DepartmentService;
-import com.modulo2.master.model.StudentService;
-import com.modulo2.master.model.TeacherService;
+import com.modulo2.master.model.*;
+import com.modulo2.master.view.CourseUI;
 import com.modulo2.master.view.InputUserUI;
+import com.modulo2.master.view.UniversityUI;
 
 public class UniversityController {
 
@@ -14,7 +13,13 @@ public class UniversityController {
     private final StudentService studentService = new StudentService();
     private final TeacherService teacherService = new TeacherService();
     private final InputUserUI inputUserUI = new InputUserUI();
+    private final UniversityUI universityUI = new UniversityUI();
+    private final CourseUI courseUI = new CourseUI();
 
-    //
-
+    // Message
+    public void showMessage(){
+        universityUI.firstMessage();
+        courseUI.information(courseService.getCourse1());
+        courseUI.information(courseService.getCourse2());
+    }
 }

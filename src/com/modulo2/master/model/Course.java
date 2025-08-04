@@ -18,9 +18,6 @@ public class Course {
         this.teacher = teacher;
         // Composition, the course creates the array of its students
         this.enrolledStudents = new Student[maxCapacity];
-        System.out.printf("Curso %s creado con capacidad para %d estudiantes.",
-                this.name,
-                maxCapacity);
     }
 
     // Getters
@@ -36,47 +33,26 @@ public class Course {
     public Teacher getTeacher(){
         return this.teacher;
     }
-    public Student[] getEnrolledStudents(){
-        return this.enrolledStudents;
-    }
-    public int getStudentCount(){
-        return this.studentCount;
-    }
 
     /**
      * Method for writing students
      * It checks if there is a student and adds him to the course
      * */
-    public void enrollStudent(Student student){
+    public boolean enrollStudent(Student student){
         if (this.studentCount < this.maxCapacity){
             this.enrolledStudents[this.studentCount] = student; // Creating the array
             this.studentCount++;
-            System.out.printf("Estudiante %s matriculado en %s.",
-                    student.getName(),
-                    this.name);
+            return true; // Successful registration
         }else{
-            System.out.printf("ERROR: El curso %s esta lleno, No se puede matricular a %s.",
-                    this.name,
-                    student.getName());
+            return false; // Failed because the course is full
         }
     }
-    /**
-     * Method to show students
-     * We show the students who are enrolled
-     * */
-    public void displayEnrolledStudents(Student student){
-        System.out.printf("Estudiantes matriculados en %s:",
-                this.name);
-        if (this.studentCount == 0) {
-            System.out.println("No hay estudiantes matriculados.");
-        }else{
-            for (int i = 0; i < this.studentCount; i++){
-                if (this.enrolledStudents[i] != null){
-                    System.out.printf("* %s ID: %s",
-                            this.enrolledStudents[i].getName(),
-                            this.enrolledStudents[i].getIdStudent());
-                }
-            }
+    // Method to obtain the list of students
+    public Student[] getEnrolledStudents(){
+        Student[] students = new Student[this.studentCount];
+        for(int i = 0; i < this.studentCount; i++){
+            students[i] = this.enrolledStudents[i];
         }
+        return students;
     }
 }

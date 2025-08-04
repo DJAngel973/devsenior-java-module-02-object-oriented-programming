@@ -16,4 +16,12 @@ public class CourseService {
     // Getters
     public Course getCourse1(){return course1;}
     public Course getCourse2(){return course2;}
+
+    // Methods
+    public boolean enrollStudentCourse(Course course, Student student){
+        return course.enrollStudent(student);
+    }
+    public Student[] getStudentsInCourse(Course course){
+        return course.getEnrolledStudents();
+    }
 }

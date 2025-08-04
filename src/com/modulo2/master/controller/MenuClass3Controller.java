@@ -44,6 +44,7 @@ public class MenuClass3Controller {
     }
     // Method option two, example
     public void example(){
-
+        UniversityController universityController = new UniversityController();
+        universityController.showMessage();
     }
 }
