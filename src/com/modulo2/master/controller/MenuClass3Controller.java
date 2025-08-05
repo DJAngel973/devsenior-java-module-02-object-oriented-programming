@@ -46,5 +46,6 @@ public class MenuClass3Controller {
     public void example(){
         UniversityController universityController = new UniversityController();
         universityController.showMessage();
+        universityController.showDepartment();
     }
 }
