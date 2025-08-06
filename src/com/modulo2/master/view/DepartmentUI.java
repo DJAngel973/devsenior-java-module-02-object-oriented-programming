@@ -8,10 +8,10 @@ public class DepartmentUI {
     // Method success or error message
     public void displayTeacherResult(boolean success, Teacher teacher, Department department){
         if(success){
-            System.out.printf("Profesor %s agregando al departamento %s\n",
+            System.out.printf("Profesor %s agregando al departamento %s\n\n",
                     teacher.getName(), department.getName());
         }else{
-            System.out.printf("ERROR: El departamento %s esta lleno, no se puede agregar a %s\n",
+            System.out.printf("ERROR: El departamento %s esta lleno, no se puede agregar a %s\n\n",
                     department.getName(),
                     teacher.getName());
         }
@@ -29,10 +29,10 @@ public class DepartmentUI {
         Teacher[] teachers = department.reDisplayTeacher();
         // Check if there are any teachers.
         if (teachers.length == 0){
-            System.out.println(" No hay profesores.");
+            System.out.println(" No hay profesores.\n\n");
         }else { // Look through the array to display  each non-null teacher.
             for (Teacher teacherr : teachers) {
-                System.out.printf("* %s - %s\n",
+                System.out.printf("* %s - %s\n\n",
                         teacher.getName(),
                         teacher.getIdTeacher());
             }

@@ -7,6 +7,14 @@ public class UniversityUI {
 
     // message
     public void firstMessage(){
-        System.out.println("/-*  Universidad  */-");
+        System.out.println("*/-/+/-*     Información Universidad     */-/+/-*\n");
+    }
+    // message students
+    public void mesTeacher(){
+        System.out.println("*/-/+   Profesores   */-/+\n");
+    }
+    // message students
+    public void mesStudent(){
+        System.out.println("*/-/+   Estudiantes   */-/+\n");
     }
 }

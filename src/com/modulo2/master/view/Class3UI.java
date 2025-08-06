@@ -52,7 +52,7 @@ public class Class3UI {
     // Show first message
     public void welcome(){
         System.out.println("""
-                La clase 3 se compone del modelado avanzado de clases en POO, de acuerdo a herencia, polimorfismo podemos
+                \nLa clase 3 se compone del modelado avanzado de clases en POO, de acuerdo a herencia, polimorfismo podemos
                 empezar a crear modelados avanzados, implementando arrays y las relaciones.
                 """);
     }

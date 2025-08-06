@@ -26,7 +26,8 @@ public class Teacher {
     public Department getDepartment(){
         return this.department;
     }
-
-    // Method abstract
-    //public abstract String displayInfo();
+    @Override
+    public String toString(){
+        return String.format("%s - %s", name, idTeacher);
+    }
 }
