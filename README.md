@@ -7,44 +7,65 @@ Module 2 focuses on Object-Oriented Programming (OOP) principles, reinforcing co
 This project was developed using the Model-View-Controller (MVC) pattern to reinforce the Single Responsibility Principle (SRP) and other SOLID design principles. It features a start menu that allows users to navigate through each class and view its most representative exercise, offering a practical overview of key programming concepts.
 
 - [Main](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/Main.java)
-
+- [PrimaryMenuUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/PrimaryMenuUI.java)
+- [AppController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/AppController.java)
+- [MenuController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/MenuController.java)
+## First exercise
 ### 📁 Model
-- [Book](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/Book.java)
-- [BookService](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/BookService.java)
-- [Car](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/Car.java)
 - [Employee](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/Employee.java)
 - [EmployeeService](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/EmployeeService.java)
+### 📁 View
+- [EmployeeUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/EmployeeUI.java)
+- [InputUserUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/InputUserUI.java)
+- [MenuClass1UI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/MenuClass1UI.java)
+### 📁 Controller
+- [EmployeeController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/EmployeeController.java)
+- [MenuClass1Controller](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/MenuClass1Controller.java)
+
+## Second exercise
+### 📁 Model
+- [Car](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/Car.java)
 - [Motorcycle](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/Motorcycle.java)
 - [Truck](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/Truck.java)
 - [Vehicle](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/Vehicle.java)
 - [VehicleService](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/model/VehicleService.java)
-
 ### 📁 View
-- [BookUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/BookUI.java)
 - [Class2UI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/Class2UI.java)
-- [EmployeeUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/EmployeeUI.java)
-- [InputUserUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/InputUserUI.java)
-- [MenuClassUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/MenuClass1UI.java) 
 - [PrimaryMenuUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/PrimaryMenuUI.java)
 - [VehicleUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/view/VehicleUI.java)
-
 ### 📁 Controller
-- [AppController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/AppController.java)
-- [BookController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/BookController.java)
-- [EmployeeController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/EmployeeController.java)
 - [FleetVehicleController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/FleetVehicleController.java)
-- [MenuClass1Controller](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/MenuClass1Controller.java)
 - [MenuClass2Controller](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/MenuClass2Controller.java)
-- [MenuController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/classoneandtwo/controller/MenuController.java)
+### 📁 Interfaz
+- [IBootable](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/interfaz/IBootable.java) 
+
+## Third exercise
+### 📁 Model
+- [Course](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/model/Course.java)
+- [CourseService](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/model/CourseService.java)
+- [Department](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/model/Department.java)
+- [DepartmentService](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/model/DepartmentService.java)
+- [Student](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/model/Student.java)
+- [StudentService](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/model/StudentService.java)
+- [Teacher](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/model/Teacher.java)
+- [TeacherService](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/model/TeacherService.java)
+### 📁 View
+- [Class3UI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/view/Class3UI.java)
+- [CourseUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/view/CourseUI.java)
+- [DepartmentUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/view/DepartmentUI.java)
+- [UniversityUI](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/view/UniversityUI.java)
+### 📁 Controller
+- [MenuClass3Controller](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/controller/MenuClass3Controller.java)
+- [UniversityController](https://github.com/DJAngel973/devsenior-java-module-02-object-oriented-programming/blob/main/src/com/modulo2/master/controller/UniversityController.java)
 
 ## Description of Functionalities
 
 Explanation of core Object-Oriented Programming (OOP) concepts through exercise, all structured as a unified module. The main menu navigates through each [DevSenior](https://devseniorcode.com/) class, while a startup menu enables hands-on practice with the MVC pattern.
 
 - **Object-Oriented Programming** (OOP) is a structural approach that applies principles such as Single Responsibility (SRP) and the broader SOLID design guidelines. Each class is designed to representa specific object or behavior, promoting modularity and independent entry point to initialize and launch the application.
-- **Objects** is a real-wold entities such as buildings, vehicles, or people can be represented as objects. Each object has its own characteristics (called attributes or properties) and behaviors (called methods). For instance, a `Vehicle` object could have a `color` property abd an `move()` method. This abstraction helps model systems in a more natural and modular way, making code easier to maintain and extend.
-- **Class** is a like a blueprint or model used to create objects. For example, a `Vehicle` class defines that every vehicle should have a `color` attribute and the ability to perform actions like `move()`. Each object created from this class will inherit those properties and behaviors, enabling structured and reusable code.  `Scanner` fo
-- **SRP** the Single Responsibility Principle (SRP) states that a class should have one, and only one, reason to change. In practice, this means that a class should focus on a single responsibility or functionality. SRP os the first in SOLID, a collection of five foundational design principles for writing clean and maintainable object-oriented code.
+- **Objects** is a real-wold entities such as buildings, vehicles, or people can be represented as objects. Each object has its own characteristics (called attributes or properties) and behaviors (called methods). For instance, a `Vehicle` object could have a `color` property and an `move()` method. This abstraction helps model systems in a more natural and modular way, making code easier to maintain and extend.
+- **Class** is a like a blueprint or model used to create objects. For example, a `Vehicle` class defines that every vehicle should have a `color` attribute and the ability to perform actions like `move()`. Each object created from this class will inherit those properties and behaviors, enabling structured and reusable code.  `Scanner`
+- **SRP** the Single Responsibility Principle (SRP) states that a class should have one, and only one, reason to change. In practice, this means that a class should focus on a single responsibility or functionality. SRP is the first in SOLID, a collection of five foundational design principles for writing clean and maintainable object-oriented code.
 - **Encapsulation** is the practice of restricting direct access to an object is internal state. This is typically by declaring attributes as `private` or `protected`, ensuring they cannot be accessed or modified directly form outside the class, To interact with these attributes, public `getter` and `setter` methods are provided, which allow controlled access and updates, promoting data integrity and security.
 - **Inheritance** allows a class (subclass or child class) to derive attributes and behaviors form another class (superclass or parent class). For example, a vehicle superclass might define common properties such as color and shared methods `like accelerate()`. Subclasses such as `Car`, `Motorcycle`, or `Bicycle` inherit these features using the extends keyword, enabling code reuse and consistency across related object types.
 - **Polymorphism** is the ability of objects to take on multiple forms through a shared interface or superclass. It allows methods with the same name to behave differently depending on the object that calls them. This enables flexible and extensible code, where different classes can implement their own version of a method while being accessed uniformly.
